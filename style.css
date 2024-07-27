@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.left, .right {
+    padding: 20px;
+}
+
+.left {
+    background: linear-gradient(to bottom, #8e44ad, #c0392b);
+    color: #fff;
+}
+
+.left img {
+    border-radius: 50%;
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #fff;
+}
+
+.left h1, .left h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.left .progress-bar, .left .skill-bar {
+    background: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.left .progress, .left .skill {
+    background: #fff;
+    height: 10px;
+}
+
+.right {
+    background-color: #fff;
+    color: #333;
+}
+
+.right h3 {
+    border-bottom: 2px solid #8e44ad;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.right h3 i {
+    margin-right: 10px;
+}
+
+.job, .edu {
+    margin-bottom: 20px;
+}
+
+.job h4, .edu h4 {
+    margin: 0;
+    color: #8e44ad;
+}
+
+.job h5, .edu h5 {
+    margin: 5px 0;
+}
+
+p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #8e44ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.personal-info, .education, .interests {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left, .right {
+        flex: 1;
+    }
+
+    .left {
+        max-width: 350px;
+    }
+}
